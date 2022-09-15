@@ -18,6 +18,7 @@ jobs:
     steps:
       - uses: actions/stale@v5
         with:
+          include-only-assigned: true
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-issue-stale: 30
           days-before-issue-close: 14
